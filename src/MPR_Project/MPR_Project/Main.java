@@ -5,26 +5,26 @@ public class Main {
 public static void main(String[] args) throws Exception {
   
 	  Firma firma= new Firma("KRZAK");
-	
+	  //Pracownik p =new Pracownik ("")
 
-      firma.addPracownik(new Pracownik("Adam","Poniedzia³ek", 1, 689, 54));
+      firma.addPracownik(new Pracownik("Adam","Poniedziaï¿½ek", 1, 689, 54));
       firma.addPracownik(new Pracownik("Ewa","Nowak", 2, 2700, 39));
       firma.addPracownik(new Pracownik("Jacek","Jutro", 3, 928,  34));
 
-     // firma.addDzial(new Dzial(1,"Ksiêgowoœæ"));
-    //  firma.addDzial(new Dzial(2, "Marketing"));
-      //firma.addDzial(new Dzial(3, "Sprzeda¿"));
+     firma.addDzial(new Dzial(1,"Ksiï¿½gowoï¿½ï¿½"));
+     firma.addDzial(new Dzial(2, "Marketing"));
+      firma.addDzial(new Dzial(3, "Sprzedaï¿½"));
           
     //firma.printAll();
       firma.printPracownicy();
       firma.printDzialy();
       firma.searchDzial("Marketing");
-      firma.removeDzial("Sprzeda¿");
+      firma.removeDzial("Sprzedaz");
 
       firma.removePracownik("Jutro");
-     //firma.searchPoImieniu("Jacek");
-    // firma.searchPoImieniu("Poniedzia³ek");
-      firma.searchPracownik("Poniedzia³ek");
+     firma.searchPoImieniu("Jacek");
+    // firma.searchPoImieniu("Poniedziaï¿½ek");
+      firma.searchPracownik("Poniedziazek");
 
    }
  }

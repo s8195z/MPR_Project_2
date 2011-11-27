@@ -115,7 +115,6 @@
         			
     	/*	else //nazwisko = null;
           //System.out.println("Nie zaleziono pracownika" +nazwisko);
-    	   System.out.println("Produktu nie znaleziono w cenniku.");
     		return null;
     	    
     	    pracownik.printPracownik();
