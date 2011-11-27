@@ -8,6 +8,7 @@ public class Pracownik {
 	private  double wynagrodzenie;
 	private int wiek;
 
+
     public Pracownik(String imie, String nazwisko, int id, double wynagrodzenie, int wiek)  
       {
            this.imie=imie;
@@ -42,7 +43,7 @@ public class Pracownik {
       }
       
 
-      
+  
      public int getID(){
         return this.id;
      }
@@ -57,8 +58,11 @@ public class Pracownik {
     {
             return this.wynagrodzenie;
 }
-    public void setWynagrodzenie(int wynagrodzenie){
-        this.wynagrodzenie=wynagrodzenie;
+    public void setWynagrodzenie(double wynagrodzenie2){
+        this.wynagrodzenie=wynagrodzenie2;
     }
+
+
+
 }  
 
