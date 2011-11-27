@@ -1,13 +1,24 @@
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import MPR_Project.Dzial;
+import MPR_Project.Firma;
+import MPR_Project.Pracownik;
+
 
 public class FirmaTest {
+	
+	private static Pracownik p;
+	private static Firma f;
+
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -16,6 +27,8 @@ public class FirmaTest {
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
 	}
+
+//	private Object pracownik;
 
 	@Before
 	public void setUp() throws Exception {
@@ -72,23 +85,23 @@ public class FirmaTest {
 
 	@Test
 	public void testAddPracownik() {
-		fail("Not yet implemented");
-	//}
+	//	fail("Not yet implemented");
 	
-//	 Pracownik p = new Pracownik ("Adam");
-	//Car c= new Car (CarMarks.AlfaRomeo,"333");
-	
-	//p.addPracownik(p);
-	
-	//assertTrue("Nie dodalo elementu", p.getPracownik().size()>0);
-	
-}
-	
+	   // Dzial d = new Dzial(1, "ksiegowosc");
+       // d.addPracownik(pracownik);
+		
+	// List<Pracownik> list = pracownicy.getAllPracownicy();
+
+		
+	}
 	
 
 	@Test
 	public void testRemoveDzial() {
 		fail("Not yet implemented");
+		
+	
+		
 	}
 
 	@Test
@@ -103,12 +116,21 @@ public class FirmaTest {
 
 	@Test
 	public void testSearchPracownik() {
-		fail("Not yet implemented");
+	//	fail("Not yet implemented");
+	
+		Firma f=new Firma ("x");	
+		
+		f.addPracownik(new Pracownik("Adam", "Kowalski", 1, 3, 4));
+		assertNotNull(f.pracownicy);
+			
 	}
 
 	@Test
 	public void testSearchPoImieniu() {
-		fail("Not yet implemented");
+	//	fail("Not yet implemented");
+		
+	//Pracownik p = new Pracownik ("Poniedzialek");
+	
 	}
 
 	@Test

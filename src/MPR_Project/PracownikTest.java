@@ -6,9 +6,14 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import MPR_Project.Pracownik;
+
 
 public class PracownikTest {
-
+	
+	private static Pracownik p;
+	
+	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	}
@@ -27,7 +32,11 @@ public class PracownikTest {
 
 	@Test
 	public void testPracownik() {
-		fail("Not yet implemented");
+		//fail("Not yet implemented");
+		
+		Pracownik testPracownik = new Pracownik ("Jan");
+		asserTrue(testPracownik.getName().equals("Jan"));
+		
 	}
 
 	@Test
